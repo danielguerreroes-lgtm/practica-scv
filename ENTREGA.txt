@@ -1,0 +1,24 @@
+PUBLICAR ESTE REPOSITORIO EN GITHUB
+
+El trabajo local contiene el historial de la práctica: .gitignore y directorio con .gitkeep, rama feature, dos ramas creadas desde main, una fusión con conflicto resuelto, rebase y fusión final de feature.
+
+Para completar la entrega en GitHub:
+1. En GitHub crea un repositorio vacío llamado practica-scv (sin README, licencia ni .gitignore).
+2. Abre PowerShell en la carpeta practica-scv descomprimida.
+3. Ejecuta, sustituyendo TU_USUARIO por tu usuario de GitHub:
+
+   git remote add origin https://github.com/TU_USUARIO/practica-scv.git
+   git push -u origin main
+   git push -u origin feature
+   git push origin --delete feature
+   git branch -d feature
+
+Así subes main y feature después de la fusión y eliminas feature al final, como indica el ejercicio. El historial de las ramas de integración eliminadas sigue disponible en los commits fusionados en main.
+
+Para mostrar el conflicto resuelto y el rebase, puedes enseñar el historial con:
+
+   git log --graph --oneline --decorate --all
+   git show --stat --oneline HEAD
+
+NOTA SOBRE EL DIRECTORIO VACÍO
+Git no guarda directorios vacíos. Por eso carpeta-vacia contiene .gitkeep, el marcador habitual que permite conservarla en el repositorio.
