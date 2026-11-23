@@ -1,1 +1,3 @@
-Contenido escrito desde main.
+Conflicto resuelto conservando ambas aportaciones:
+- main
+- rama-conflicto
